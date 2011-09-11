@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent" android:orientation="vertical">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:id="@+id/relativeLayout1" android:gravity="top">
+        <TextView android:id="@+id/NametextView" android:layout_alignParentTop="true" android:text="姓名" android:layout_height="wrap_content" android:layout_width="wrap_content"></TextView>
+    </RelativeLayout>
+    <RelativeLayout android:layout_height="wrap_content" android:layout_width="match_parent" android:layout_gravity="left" android:id="@+id/relativeLayout2">
+        <EditText android:text="EditText" android:layout_height="wrap_content" android:id="@+id/editText1" android:layout_width="100dip"></EditText>
+        <Spinner android:layout_width="wrap_content" android:id="@+id/spinner1" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_toRightOf="@+id/editText1"></Spinner>
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/relativeLayout3" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:id="@+id/textView1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="电话号码(*)"></TextView>
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/relativeLayout4" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <EditText android:layout_height="wrap_content" android:layout_alignParentTop="true" android:text="EditText" android:id="@+id/editText4" android:layout_width="match_parent" android:digits="1234567890"></EditText>
+    </RelativeLayout>
+    <RelativeLayout android:layout_height="wrap_content" android:id="@+id/relativeLayout5" android:layout_width="match_parent">
+        <TextView android:id="@+id/textView2" android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="起始位置(*)"></TextView>
+    </RelativeLayout>
+    <RelativeLayout android:layout_height="wrap_content" android:layout_width="match_parent" android:id="@+id/relativeLayout6">
+        <EditText android:text="EditText" android:layout_height="wrap_content" android:id="@+id/editText2" android:layout_width="match_parent" android:freezesText="true"></EditText>
+    </RelativeLayout>
+    <RelativeLayout android:layout_height="wrap_content" android:layout_width="match_parent" android:id="@+id/relativeLayout7">
+        <TextView android:id="@+id/textView3" android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="目的地(*)"></TextView>
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/relativeLayout8">
+        <EditText android:text="EditText" android:layout_height="wrap_content" android:id="@+id/editText3" android:layout_width="match_parent"></EditText>
+    </RelativeLayout>
+    <RelativeLayout android:layout_height="wrap_content" android:layout_width="match_parent" android:id="@+id/relativeLayout9">
+        <TextView android:id="@+id/textView4" android:layout_height="wrap_content" android:layout_width="match_parent" android:text="距离和估价："></TextView>
+    </RelativeLayout>
+    <RelativeLayout android:layout_height="wrap_content" android:layout_width="match_parent" android:id="@+id/relativeLayout10" android:gravity="center">
+        <Button android:id="@+id/applyButton" android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="提交" android:layout_toRightOf="@+id/imageButton1"></Button>
+        <Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@+id/applyButton" android:layout_alignTop="@+id/applyButton" android:layout_alignBottom="@+id/applyButton" android:id="@+id/serviceExit" android:text="退出"></Button>
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent" android:orientation="vertical">
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/orderstatusrelativeLayout2">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="订单结果：有无订单" android:id="@+id/orderstatustextViewResult"></TextView>
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="wrap_content" android:id="@+id/orderstatusrelativeLayout1" android:layout_height="wrap_content">
+        <ImageView android:layout_width="wrap_content" android:id="@+id/orderstatusimageView1" android:layout_height="wrap_content" android:src="@drawable/taxi"></ImageView>
+        <TextView android:layout_toRightOf="@+id/orderstatusimageView1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/orderstatustextView1" android:text="订单信息"></TextView>
+    </RelativeLayout>
+    <FrameLayout android:layout_width="match_parent" android:id="@+id/frameLayout1" android:layout_height="match_parent">
+    <RelativeLayout android:id="@+id/relativeLayout1" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <HorizontalScrollView android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/horizontalScrollView1" android:layout_alignParentBottom="true">
+            <LinearLayout android:id="@+id/BottomBar" android:orientation="horizontal" android:layout_height="wrap_content" android:layout_width="wrap_content">
+                <Button android:id="@+id/OSbutton1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=" 地图展开"></Button>
+                <Button android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="文字模式" android:id="@+id/OSbutton2"></Button>
+                <Button android:id="@+id/OSbutton3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="地图模式"></Button>
+                <Button android:text="Button" android:id="@+id/button4" android:layout_width="wrap_content" android:layout_height="wrap_content"></Button>            
+            </LinearLayout>
+        </HorizontalScrollView>        
+    </RelativeLayout>
+    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/OStimeleft" android:text="5 分钟" android:textSize="60sp"></TextView>
+    </FrameLayout>
+</LinearLayout>

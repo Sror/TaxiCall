@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  android:layout_width="match_parent"
+  android:layout_height="match_parent" android:orientation="vertical" xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_height="wrap_content" android:layout_width="match_parent" android:id="@+id/textmodelframeLayout1">
+    <com.baidu.mapapi.MapView android:clickable="true" android:id="@+id/textmodelmapview" android:layout_height="wrap_content" android:layout_width="wrap_content"></com.baidu.mapapi.MapView>    
+    </FrameLayout>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:id="@+id/textmodelrelativeLayout1" android:gravity="top">
+        <TextView android:id="@+id/textmodelNametextView" android:layout_alignParentTop="true" android:text="姓名" android:layout_height="wrap_content" android:layout_width="wrap_content"></TextView>
+    </RelativeLayout>
+    <RelativeLayout android:layout_height="wrap_content" android:layout_width="match_parent" android:layout_gravity="left" android:id="@+id/textmodelrelativeLayout2">
+        <EditText android:text="" android:layout_height="wrap_content" android:id="@+id/textmodeleditText1" android:layout_width="100dip"></EditText>
+        <Spinner android:layout_width="wrap_content" android:id="@+id/textmodelspinner1" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_toRightOf="@+id/textmodeleditText1"></Spinner>
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/textmodelrelativeLayout3" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:id="@+id/textmodeltextView1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="电话号码(*)"></TextView>
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/textmodelrelativeLayout4" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <EditText android:layout_height="wrap_content" android:layout_alignParentTop="true" android:text="" android:id="@+id/textmodeleditText4" android:layout_width="match_parent" android:digits="1234567890"></EditText>
+    </RelativeLayout>
+    <RelativeLayout android:layout_height="wrap_content" android:id="@+id/textmodelrelativeLayout5" android:layout_width="match_parent">
+        <TextView android:id="@+id/textmodeltextView2" android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="起始位置(*)"></TextView>
+    </RelativeLayout>
+    <RelativeLayout android:layout_height="wrap_content" android:layout_width="match_parent" android:id="@+id/textmodelrelativeLayout6">
+        <Spinner android:layout_width="240dip" android:layout_height="wrap_content" android:id="@+id/textmodelStartSpinner"></Spinner>
+        <EditText android:text="" android:id="@+id/textmodeleditText2" android:freezesText="true" android:layout_width="200dip" android:layout_height="50dip"></EditText>
+        <Button android:layout_width="wrap_content" android:text="Button" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:id="@+id/textmodelbutton1" android:layout_toRightOf="@+id/textmodelStartSpinner"></Button>
+    </RelativeLayout>
+    <RelativeLayout android:layout_height="wrap_content" android:layout_width="match_parent" android:id="@+id/textmodelrelativeLayout7">
+        <TextView android:id="@+id/textmodeltextView3" android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="目的地(*)"></TextView>
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/textmodelrelativeLayout8">
+        <Spinner android:layout_width="240dip" android:layout_height="wrap_content" android:id="@+id/textmodespinner2"></Spinner>
+        <EditText android:text="" android:id="@+id/textmodeleditText3" android:layout_width="200dip" android:layout_height="50dip"></EditText>
+        <Button android:layout_width="wrap_content" android:text="Button" android:layout_height="wrap_content" android:id="@+id/textmodelbutton2" android:layout_toRightOf="@+id/textmodespinner2"></Button>
+    </RelativeLayout>
+    <RelativeLayout android:layout_height="wrap_content" android:layout_width="match_parent" android:id="@+id/textmodelrelativeLayout9">
+        <TextView android:id="@+id/textmodeltextView4" android:layout_height="wrap_content" android:layout_width="match_parent" android:text="距离和估价："></TextView>
+    </RelativeLayout>
+    <RelativeLayout android:layout_height="wrap_content" android:layout_width="match_parent" android:gravity="center" android:id="@+id/textmodelrelativeLayout10">
+        <Button android:id="@+id/textmodelapplyButton" android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="提交" android:layout_toRightOf="@+id/imageButton1"></Button>
+        <Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@+id/textmodelapplyButton" android:layout_alignTop="@+id/textmodelapplyButton" android:layout_alignBottom="@+id/textmodelapplyButton" android:id="@+id/textmodelserviceExit" android:text="退出"></Button>
+    </RelativeLayout>
+    <HorizontalScrollView android:layout_below="@+id/relativeLayout3"  android:layout_gravity="bottom" android:layout_width="match_parent" android:layout_height="match_parent" android:id="@+id/textmodelHScrollView">
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="bottom" android:id="@+id/textmodelBar">
+            <Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/textmodelGotoMap" android:text="地图模式"></Button>
+            <Button android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="订单查询" android:id="@+id/textmodelOrderStatus"></Button>
+            <Button android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="weibo share" android:id="@+id/weiboShare"></Button>
+            <Spinner android:layout_height="wrap_content" android:id="@+id/mySpinner" android:layout_width="wrap_content" android:tag="no service"></Spinner>
+        </LinearLayout>
+    </HorizontalScrollView>
+</LinearLayout>

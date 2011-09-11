@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent" android:orientation="vertical">
+  
+<RelativeLayout android:layout_height="wrap_content" android:layout_width="match_parent" android:id="@+id/relativeLayout2">
+    <HorizontalScrollView android:layout_height="wrap_content" android:id="@+id/horizontalScrollView2" android:layout_width="wrap_content" android:layout_below="@+id/relativeLayout3">
+        <LinearLayout android:orientation="horizontal" android:id="@+id/titleBar" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <Button android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="文字模式" android:id="@+id/MapModelGotoTextView"></Button>
+            <Button android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="订单查询"  android:id="@+id/MapModelorderCheck"></Button>
+            <Button android:layout_height="wrap_content" android:id="@+id/set" android:layout_width="wrap_content" android:text="no service"></Button>
+            <Spinner android:layout_height="wrap_content" android:id="@+id/mySpinner" android:layout_width="wrap_content" android:tag="no service"></Spinner>
+        </LinearLayout>
+    </HorizontalScrollView>
+</RelativeLayout>
+  <RelativeLayout android:id="@+id/relativeLayout1" android:layout_width="wrap_content" android:layout_height="match_parent">
+      <com.baidu.mapapi.MapView android:id="@+id/map_View" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent"></com.baidu.mapapi.MapView>
+  </RelativeLayout> 
+</LinearLayout>
