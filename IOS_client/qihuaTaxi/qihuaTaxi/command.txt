@@ -1,0 +1,25 @@
+
+
+
+=====================================================
+
+
+////use the bash line to remove svn files;
+
+find . -type d -name ".svn" | xargs rm -rf 
+
+
+---------------------------------------------------
+NSZombieEnabled YES
+
+6394 lines *.m   2012 11-06
+1417 lines *.h   2012 5-24
+
+
+////////////////////////
+##find . -name '*.m' -exec cat {} \; | wc -l
+##find . -name '*.h' -exec cat {} \; | wc -l
+##  this is designed to calculate the total lines of codes in your project
+##  version 2 @May 24, 2009
+##  \- add file filter ,count specific file types add 
+##  version 1 @october 8th,2008 
